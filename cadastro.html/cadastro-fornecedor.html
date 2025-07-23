@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Fornecedor - Clube de Descontos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    button.voltar {
+      padding: 10px 20px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button.enviar {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button.enviar:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <button class="voltar" onclick="window.location.href='entrar.html'">← Voltar</button>
+  </header>
+
+  <h1>Cadastro de Agricultor Fornecedor</h1>
+
+  <form id="form-fornecedor">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="propriedade">Nome da propriedade ou marca:</label>
+    <input type="text" id="propriedade" name="propriedade">
+
+    <label for="documento">CPF ou CNPJ:</label>
+    <input type="text" id="documento" name="documento" required>
+
+    <label for="telefone">Telefone (WhatsApp):</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="cep">CEP da propriedade:</label>
+    <input type="text" id="cep" name="cep" required>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required>
+
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" name="bairro" required>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" required>
+
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" name="estado" required>
+
+    <label for="produtos">Produtos que cultiva/oferece:</label>
+    <textarea id="produtos" name="produtos" rows="3" placeholder="Ex: alface, cenoura, mandioca..." required></textarea>
+
+    <label for="volume">Volume médio semanal de produção:</label>
+    <input type="text" id="vo
